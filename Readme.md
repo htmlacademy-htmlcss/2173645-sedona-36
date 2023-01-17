@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ярослав Деркач](https://up.htmlacademy.ru/htmlcss/36/user/2173645).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Ламков](https://htmlacademy.ru/profile/aleksanderlamkov).
 
 ---
 
