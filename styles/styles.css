@@ -1,13 +1,13 @@
 @font-face {
-  font-family:"PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(" ../fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family:"PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -49,10 +49,10 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  background-color: #756157;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
+  background-color: #756157;
   border: transparent;
 }
 
@@ -65,7 +65,7 @@ body {
 .subscribe-button,
 .button-apply,
 .like-button {
-  background-color:#82B3D3;
+  background-color: #82b3d3;
 }
 
 .welcome {
@@ -95,16 +95,20 @@ body {
   line-height: 26px;
   text-align: center;
 }
+
 .blue {
-  background-color: #82B3D3;
   color: #ffffff;
+  background-color: #82b3d3;
 }
- .blue .advantages-description{
+
+ .blue .advantages-description {
   color: #ffffff;
  }
+
  .light-blue {
-  background-color: rgba(131, 179, 211, 0.2);;
+  background-color: rgba(131, 179, 211, 0.2);
  }
+
  .extra-light-blue {
   background-color: rgba(131, 179, 211, 0.12);
  }
@@ -124,22 +128,22 @@ body {
 }
 
 .subscribe {
+  color: #ffffff;
   background-image: url("../images/photos/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: #ffffff;
 }
 
 .subscribe-light {
-  background: 0;
   color: inherit;
+  background: initial;
 }
 
 .field {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .contacts-address-phone {
@@ -150,10 +154,10 @@ body {
 }
 
 .top-background-wrapper {
+  color: #ffffff;
   background-image: url("../images/photos/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  color: #ffffff;
 }
 
 .catalog-filter-title {
@@ -196,23 +200,23 @@ body {
 
 .hotel-rating {
   font-weight: 400;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-link {
-  background-color: #82B3D3;
-  color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 .pagination-link-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
-.pagination-show-more{
-  background-color: #ffffff;
+.pagination-show-more {
   color: #000000;
+  background-color: #ffffff;
 }
