@@ -112,7 +112,7 @@ body {
   padding: 20px 16px;
 }
 
-.page-header .nav-user {
+.page-header .nav-user-list {
   display: flex;
   width: 135px;
   margin-left: auto;
@@ -240,7 +240,6 @@ body {
   background-color: #f2f2f2;
 }
 
-
 .contacts {
   display: flex;
   justify-content: space-between;
@@ -267,6 +266,7 @@ body {
 }
 
 .top-background-wrapper {
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-image: url("../images/photos/filter-background.jpg");
   background-size: 100% auto;
@@ -279,16 +279,57 @@ body {
   line-height: 24px;
 }
 
+.breadcrumbs-list {
+  display: flex;
+}
+
+.breadcrumbs-item {
+  margin-right: 10px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   color: #ffffff;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-group-left {
+  margin-right: 70px;
+}
+
+.catalog-filter-group-right {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .button-reset {
   background-color: transparent;
 }
 
+.catalog-wrapper {
+  padding: 50px 70px 60px 70px;
+}
+
+.total-filter-wrapper{
+  display: flex;
+}
+
 .total-filter {
+  width: 345px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -296,9 +337,29 @@ body {
 }
 
 .select-control {
+  margin-left: auto;
+  margin-right: 70px;
+  width: 292px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+}
+
+.view-buttons {
+  width: 160px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotel-card {
+  width: 340px;
+  margin-right: 20px;
+}
+
+.hotel-card:nth-child(3) {
+  margin-right: 0px;
 }
 
 .hotel-card-title {
@@ -316,7 +377,14 @@ body {
   background-color: #f2f2f2;
 }
 
+.pagination-list {
+  display: flex;
+}
+
 .pagination-link {
+  display: block;
+  margin-right: 8px;
+  width: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -330,6 +398,8 @@ body {
 }
 
 .pagination-show-more {
+  margin-right: 8px;
+  width: 60px;
   color: #000000;
   background-color: #ffffff;
 }
