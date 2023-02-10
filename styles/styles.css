@@ -14,15 +14,13 @@
   font-display: swap;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -30,9 +28,12 @@ body {
 }
 
 .body-wrapper {
-  background-color: #ffffff;
-  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -108,7 +109,7 @@ body {
   width: 470px;
 }
 
-.nav-list .nav-item {
+.nav-list .nav-link {
   padding: 20px 16px;
 }
 
