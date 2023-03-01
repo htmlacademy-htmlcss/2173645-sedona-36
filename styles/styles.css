@@ -98,7 +98,7 @@ select {
   background-color: #756157;
   border: transparent;
   border-radius: 4px;
-   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -106,12 +106,10 @@ select {
 }
 
 .button:focus {
-  outline: none;
   background-color: #615048;
 }
 
 .button:active{
-  outline: none;
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157
 }
@@ -121,7 +119,6 @@ select {
 }
 
 .button.blue:focus {
-  outline: none;
   background-color: #68a2ca;
 }
 
@@ -134,7 +131,6 @@ select {
 }
 
 .button.green:focus {
-  outline: none;
   background-color: #6c9e42;
 }
 
@@ -249,48 +245,35 @@ button:disabled,
 }
 
  .nav-link-current::before {
+  content: "";
   position: absolute;
   right: 16px;
   bottom: 0;
   left: 16px;
   height: 2px;
   background-color: #756257;
-  content: "";
-}
-
-.nav-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
 }
 
 .favorites-value {
-  z-index: 1;
   position: absolute;
-  width: 11px;
-  height: 10px;
-  left: calc(50% - 11px/2 + 7.5px);
-  top: calc(50% - 10px/2 - 11px);
-  color: #ffffff;
-}
-
-.favorites-value::after {
-  position: absolute;
-  left: -5px;
-  top: -5px;
-  z-index: -1;
+  top: -6px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
+  color: #ffffff;
+  background-color: #7db54f;
   border-radius: 50%;
-  background-color: #7DB54F;
-  content: "";
 }
 
 .nav-user-list .nav-link {
-  padding: 19px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  width: 44px;
 }
 
 .nav-button {
@@ -306,20 +289,17 @@ button:disabled,
 .welcome {
   position: relative;
   padding: 51px 30px 82px;
-  background-image: url("../images/photos/welcome-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat;
 }
 
 .welcome::after {
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 1200px;
   height: 57px;
   background-image: url("../images/decor/stairs-welcome-background.svg");
-  content: "";
 }
 
 .welcome-logo {
@@ -373,8 +353,7 @@ button:disabled,
 
 .advantages-item-wrapper,
 .services-item-wrapper {
-  height: 385px;
-  /* не знаю каким образом еще реализовать совпадение с макетом, по нему у всех этих элементов разные паддинги, так же не удается добиться совпадения у синих преимуществ*/
+  min-height: 385px;
   position: relative;
   padding: 81px 85px;
 }
@@ -424,6 +403,7 @@ button:disabled,
 }
 
 .advantages-title:after {
+  content: "";
   position:absolute;
   top: 15px;
   right: 0;
@@ -433,10 +413,10 @@ button:disabled,
   height: 2px;
   width: 60px;
   background: rgba(0, 0, 0, 0.3);
-  content: "";
 }
 
-.blue>.advantages-title:after {
+.blue > .advantages-title:after {
+  top: -7px;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -445,39 +425,46 @@ button:disabled,
   margin-bottom: 62px;
 }
 
+.blue > .advantages-title:not(:last-child) {
+  margin-top: 23px;
+}
+
 .services-title:not(:last-child) {
   margin-top: 100px;
   margin-bottom: 30px;
 }
 
 .house::before {
+  content: "";
   position: absolute;
   top: 82px;
-  left: calc(50% - 75px/2 + 1px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 75px;
   height: 72px;
   background-image: url(../images/icons/house.svg);
-  content: "";
  }
 
 .burger::before {
+  content: "";
   position: absolute;
   top: 82px;
-  left: calc(50% - 74px/2 + 0.5px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 74px;
   height: 70px;
   background-image: url(../images/icons/burger.svg);
-  content: "";
 }
 
 .gift::before {
+  content: "";
   position: absolute;
   top: 80px;
-  left: calc(50% - 64px/2 + 0.5px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 64px;
   height: 76px;
   background-image: url(../images/icons/gift.svg);
-  content: "";
 }
 
 .advantages-description,
@@ -508,10 +495,7 @@ button:disabled,
 .subscribe {
   padding: 96px 30px 104px;
   color: #ffffff;
-  background-image: url("../images/photos/subscribe-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/photos/subscribe-background.jpg") center/cover no-repeat;
 }
 
 .subscribe .slogan:not(:last-child) {
@@ -569,11 +553,12 @@ button:disabled,
 }
 
 .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
   fill: #83b3d3;
-  position: relative;
-  min-width: 18px;
-  min-height: 18px;
-  padding: 15px 24px;
 }
 
 .social-link:hover {
@@ -588,16 +573,6 @@ button:disabled,
 .social-link:active {
   opacity: 0.3;
 }
-
-.social-logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-/* Тоже не удалось добиться совпадения */
 
 .contacts-address-phone {
   align-self: center;
@@ -647,10 +622,7 @@ button:disabled,
 .top-background-wrapper {
   padding: 35px 70px 70px;
   color: #ffffff;
-  background-image: url("../images/photos/filter-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/photos/filter-background.jpg") center/cover no-repeat;
 }
 
 .catalog-title {
@@ -688,6 +660,7 @@ button:disabled,
 }
 
 .breadcrumbs-item:first-child::after {
+  content: "";
   position: absolute;
   left: 24px;
   right: 0;
@@ -696,7 +669,6 @@ button:disabled,
   width: 7px;
   height: 11px;
   background-image: url(../images/icons/pointer-right.svg);
-  content: "";
 }
 
 .catalog-filter {
@@ -778,9 +750,7 @@ button:disabled,
   max-width: 292px;
   padding: 12px 20px;
   padding-right: 40px;
-  background-image: url("../images/icons/pointer-sort.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
+  background: url("../images/icons/pointer-sort.svg") right 20px center no-repeat;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -844,7 +814,7 @@ button:disabled,
 }
 
 .hotel-card-link {
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
 }
 
 .hotel-card-title {
