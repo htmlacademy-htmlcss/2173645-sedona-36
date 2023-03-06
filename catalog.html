@@ -75,19 +75,22 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                      <input class="visually-hidden control-input field" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark control-mark-rectangle"></span>
                       <span class="control-input-name">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
+                      <input class="visually-hidden control-input field" type="checkbox" name="parking" checked>
+                      <span class="control-mark control-mark-rectangle"></span>
                       <span class="control-input-name">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
+                      <input class="visually-hidden control-input field" type="checkbox" name="wi-fi">
+                      <span class="control-mark control-mark-rectangle"></span>
                       <span class="control-input-name">Wi-Fi</span>
                     </label>
                   </li>
@@ -98,19 +101,22 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="hotel" checked>
+                      <input class="visually-hidden control-input field" type="radio" name="housing-group" value="hotel" checked>
+                      <span class="control-mark control-mark-circle"></span>
                       <span class="control-input-name">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="motel">
+                      <input class="visually-hidden control-input field" type="radio" name="housing-group" value="motel">
+                      <span class="control-mark control-mark-circle"></span>
                       <span class="control-input-name">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="housing-group" value="apartments">
+                      <input class="visually-hidden control-input field" type="radio" name="housing-group" value="apartments">
+                      <span class="control-mark control-mark-circle"></span>
                       <span class="control-input-name">Апартаменты</span>
                     </label>
                   </li>
@@ -118,6 +124,28 @@
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-group-right">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper">
+                    <div class="range-inputs-wrapper">
+                      <input class="range-input range-input-left field" type="number" value="0" id="min-price" name="min-price" min="0" max="12000">
+                      <label class="range-label" for="min-price">от</label>
+                    </div>
+                    <div class="range-inputs-wrapper">
+                      <input class="range-input range-input-right field" type="number" value="9000" id="max-price" name="max-price" min="0" max="12000">
+                      <label class="range-label" for="max-price">до</label>
+                    </div>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 226px">
+                      <button class="range-toggle toggle-min"  type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="buttons-wrapper">
                 <button class="button blue" type="submit">Применить</button>
@@ -137,7 +165,7 @@
               <option value="expensive">Сначала дорогие</option>
             </select>
             <div class="view-buttons">
-              <button class="button-cards-view button-cards-view-active" type="button">
+              <button class="button-cards-view button-cards-view-current" type="button">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" viewbox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
                 </svg>
@@ -254,7 +282,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="email">
                 <span class="visually-hidden">Email</span>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
+                <input class="email-field field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
               </label>
               <button class="button button-big blue" type="submit">Подписаться</button>
             </form>
