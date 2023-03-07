@@ -132,7 +132,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="email">
               <span class="visually-hidden">Email</span>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
+              <input class="email-field field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
             </label>
             <button class="button button-big blue " type="submit">Подписаться</button>
           </form>
@@ -185,6 +185,103 @@
           </a>
       </section>
       </footer>
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="field-group">
+                <label class="search-form-text" for="check-in-date">Дата заезда:</label>
+                <div class="serach-field-wrapper">
+                  <input class="search-field field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату">
+                  <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="curentcolor" viewBox="0 0 16 15">
+                    <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                    <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                    <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                  </svg>
+                </div>
+                <div class="invalid-field-wrapper">
+                  <span class="invalid-field">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="field-group">
+                <label class="search-form-text" for="check-out-date">Дата выезда:</label>
+                <div class="serach-field-wrapper">
+                 <input class="search-field field" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату">
+                  <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="curentcolor" viewBox="0 0 16 15">
+                    <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                    <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                    <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+                  </svg>
+                </div>
+                <div class="valid-field-wrapper">
+                  <span class="valid-field">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="quantity-wrapper">
+                <div class="field-group">
+                  <label class="search-form-text quantity-text" for="number-of-adults">Взрослые:</label>
+                  <div class="quantity-buttons-wrapper">
+                    <div class="quantity-buttton-wraper" >
+                      <button class="button-quantity" type="button">
+                        <span class="visually-hidden">Уменьшить количетсво</span>
+                        <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="curentcolor" viewBox="0 0 15 2">
+                          <path d="M.4 0v2h14V0H.4Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <input class="number field" type="number" id="number-of-adults" name="number-of-adults" value="2">
+                    <div class="quantity-buttton-wraper">
+                      <button class="button-quantity" type="button">
+                        <span class="visually-hidden">Увеличить количество</span>
+                        <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="curentcolor" viewBox="0 0 14 14">
+                          <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="field-group">
+                  <label class="search-form-text children-text quantity-text" for="number-of-children">Дети:
+                    <span class="tooltip">
+                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-info">
+                        <svg class="tooltip-info" xmlns="http://www.w3.org/2000/svg" width="3" height="12" fill="curentcolor" viewBox="0 0 3 12">
+                          <path fill-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" clip-rule="evenodd"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </label>
+                  <div class="quantity-buttons-wrapper">
+                    <div class="quantity-buttton-wraper">
+                      <button class="button-quantity" type="button">
+                        <span class="visually-hidden">Уменьшить количетсво</span>
+                        <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="2" fill="curentcolor" viewBox="0 0 15 2">
+                          <path d="M.4 0v2h14V0H.4Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <input class="number filed" type="number" id="number-of-children" name="number-of-children" value="2">
+                    <div class="quantity-buttton-wraper">
+                      <button class="button-quantity" type="button">
+                        <span class="visually-hidden">Увеличить количество</span>
+                        <svg class="button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="curentcolor" viewBox="0 0 14 14">
+                          <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="button search-button blue" type="submit">Найти</button>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
