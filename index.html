@@ -123,7 +123,7 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="search-slogan slogan">Заинтересовались?</p>
           <p class="search-slogan-description text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-big" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          <button class="button button-big" type="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </section>
         <section class="subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -196,7 +196,7 @@
               <div class="field-group">
                 <label class="search-form-text" for="check-in-date">Дата заезда:</label>
                 <div class="serach-field-wrapper">
-                  <input class="search-field field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату">
+                  <input class="search-field field" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" required placeholder="Укажите дату">
                   <svg class="calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="curentcolor" viewBox="0 0 16 15">
                     <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
                     <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
@@ -245,16 +245,17 @@
                   </div>
                 </div>
                 <div class="field-group">
-                  <label class="search-form-text children-text quantity-text" for="number-of-children">Дети:
-                    <span class="tooltip">
-                      <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-info">
-                        <svg class="tooltip-info" xmlns="http://www.w3.org/2000/svg" width="3" height="12" fill="curentcolor" viewBox="0 0 3 12">
-                          <path fill-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" clip-rule="evenodd"/>
-                        </svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </span>
-                  </label>
+                  <span class="search-form-text children-text quantity-text">
+                    <label for="number-of-children">Дети:</label>
+                      <span class="tooltip">
+                        <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-info">
+                          <svg class="tooltip-info" xmlns="http://www.w3.org/2000/svg" width="3" height="12" fill="curentcolor" viewBox="0 0 3 12">
+                            <path fill-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" clip-rule="evenodd"/>
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </span>
+                  </span>
                   <div class="quantity-buttons-wrapper">
                     <div class="quantity-buttton-wraper">
                       <button class="button-quantity" type="button">
@@ -279,7 +280,6 @@
               <button class="button search-button blue" type="submit">Найти</button>
             </form>
           </section>
-
         </div>
       </div>
     </div>
