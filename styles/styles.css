@@ -766,11 +766,11 @@ button:disabled,
   outline: 2px solid #000000;
 }
 
-.field-group > input:invalid .invalid-field {
+.search-field:invalid .invalid-field {
   display: block;
 }
 
-.field-group > input:valid .valid-field {
+.search-field:valid .valid-field {
   display: block;
 }
 
