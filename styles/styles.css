@@ -313,7 +313,7 @@ button:disabled,
 .welcome {
   position: relative;
   padding: 51px 30px 82px;
-  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #006400;
+  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #e5f1f9;
 }
 
 .welcome::after {
@@ -520,8 +520,7 @@ button:disabled,
 .subscribe {
   padding: 94px 30px 104px;
   color: #ffffff;
-  background: url("../images/photos/subscribe-background.jpg") center/cover no-repeat;
-  background-color: #006400;
+  background: url("../images/photos/subscribe-background.jpg") center/cover no-repeat #86aab9;
 }
 
 .subscribe .slogan:not(:last-child) {
@@ -736,12 +735,13 @@ button:disabled,
 .search-form {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
+  row-gap: 24px;
 }
 
 .field-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
   font-weight: 700;
   font-size: 20px;
@@ -784,17 +784,12 @@ button:disabled,
 
 .invalid-field-wrapper,
 .valid-field-wrapper {
-  position: relative;
+  width: 420px;
 }
 
 .invalid-field,
 .valid-field {
-  position: absolute;
-  top: 28px;
-  right: -20px;
   /* display: none; */
-  min-width: 440px;
-  padding-right: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -805,7 +800,7 @@ button:disabled,
   color: #ff5757;
 }
 
-.serach-field-wrapper {
+.search-field-wrapper {
   position: relative;
 }
 
@@ -829,13 +824,17 @@ button:disabled,
   justify-content: space-between;
 }
 
+.quantity-wrapper:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .quantity-buttons-wrapper {
   display: flex;
   border-radius: 4px;
   background-color: #f2f2f2;
 }
 
-.quantity-buttton-wraper {
+.quantity-button-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -962,8 +961,7 @@ button:disabled,
 .top-background-wrapper {
   padding: 32px 70px 70px;
   color: #ffffff;
-  background: url("../images/photos/filter-background.jpg") center/cover no-repeat;
-  background-color: #006400;
+  background: url("../images/photos/filter-background.jpg") center/cover no-repeat #4677a0;
 }
 
 .catalog-title {
