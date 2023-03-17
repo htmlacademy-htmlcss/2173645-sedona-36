@@ -313,7 +313,7 @@ button:disabled,
 .welcome {
   position: relative;
   padding: 51px 30px 82px;
-  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #e5f1f9;
+  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #4279a7;
 }
 
 .welcome::after {
@@ -520,7 +520,7 @@ button:disabled,
 .subscribe {
   padding: 94px 30px 104px;
   color: #ffffff;
-  background: url("../images/photos/subscribe-background.jpg") center/cover no-repeat #86aab9;
+  background: url("../images/photos/subscribe-background.jpg") center/cover no-repeat #4279a7;
 }
 
 .subscribe .slogan:not(:last-child) {
@@ -961,7 +961,7 @@ button:disabled,
 .top-background-wrapper {
   padding: 32px 70px 70px;
   color: #ffffff;
-  background: url("../images/photos/filter-background.jpg") center/cover no-repeat #4677a0;
+  background: url("../images/photos/filter-background.jpg") center/cover no-repeat #4279a7;
 }
 
 .catalog-title {
