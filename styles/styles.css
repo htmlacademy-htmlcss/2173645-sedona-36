@@ -313,7 +313,7 @@ button:disabled,
 .welcome {
   position: relative;
   padding: 51px 30px 82px;
-  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #4279a7;
+  background: url("../images/photos/welcome-background.jpg") center/cover no-repeat #e49f8d;
 }
 
 .welcome::after {
